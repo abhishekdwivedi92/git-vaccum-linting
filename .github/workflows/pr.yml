@@ -28,7 +28,7 @@ jobs:
             echo "$file was changed"
           done
 
-      - name: Analyze the Proxy
+      - name: Analyze the Files
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "$file"
